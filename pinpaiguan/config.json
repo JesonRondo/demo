@@ -1,0 +1,19 @@
+{
+  "title": "品牌站",
+  "apilevel": 2,
+  "entry": {
+    "bundle.web": {
+      "template": "template/html.dot",
+      "defines": {
+        "PLATFORM": "web"
+      }
+    },
+    "bundle": {
+      "template": "template/xc.dot",
+      "pageExtname": ".xc",
+      "defines": {
+        "PLATFORM": "native"
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "dependencies": {
+    "@component/xcore-a": "^0.1.3",
+    "@component/xcore-ajax": "^0.1.1",
+    "@component/xcore-slider-image": "^0.1.6",
+    "@component/xcore-tips": "^0.1.1",
+    "@mogu/hdp": "0.0.9",
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-es2015": "^6.13.2",
+    "css-loader": "^0.23.1",
+    "html-webpack-plugin": "^2.22.0",
+    "ip": "^1.1.3",
+    "vue-html-loader": "^1.2.3",
+    "vue-loader": "^8.5.3",
+    "vue-style-loader": "^1.0.0",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-livereload-plugin": "^0.8.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "node_modules/.bin/webpack-dev-server -d --config ./webpack.config.js --app pinpaiguan",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+document.addEventListener("deviceready", function() {
+            alert(typeof mgj.pevent);
+                    mgj.ajax.mwp(function(data) {  
+                        alert(JSON.stringify(data));  
+                    }, function(msg) {  
+                        alert('fail');
+                        alert(msg);  
+                    }, 'mwp.searchserviceonline.hotSearchWord', '1', null, 'post');
+}, false);
+</script>
+</body>
+</html>

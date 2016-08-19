@@ -1,0 +1,1 @@
+console.log(window.__test_hook);
