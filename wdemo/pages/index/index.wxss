@@ -1,0 +1,22 @@
+/**index.wxss**/
+.container {
+  display: flex;
+  height: 100%;
+  padding: 80rpx 100rpx;
+  flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.txt-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.txt-panel text {
+  color: #666;
+  font-size: 14px;
+  line-height: 2;
+  text-align: center;
+}

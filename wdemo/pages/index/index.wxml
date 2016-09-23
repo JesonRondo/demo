@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="txt-panel">
+    <block wx:if="{{rollTimes > 5}}">
+      <text>别换了</text>
+      <text>你还是自己决定吃什么吧 [难过]</text>
+    </block>
+    <block wx:elif="{{!isRoll}}">
+      <text>Hi, {{userInfo.userName}}</text>
+      <text>请先站在街边，注意车辆和外星人</text>
+      <text>准备好了吗？</text>
+    </block>
+    <block wx:else>
+      <text>{{motto}}</text>
+    </block>
+  </view>
+  <button wx:if="{{!isRoll}}" type="primary" bindtap="go">走吧</button>
+  <button wx:elif="{{rollTimes <= 1}}" type="default" bindtap="go">不想去这里，换一个</button>
+  <button wx:elif="{{rollTimes <= 5}}" type="default" bindtap="go">不想去这里，再换一个</button>
+  <button wx:else type="default" disabled="{{true}}" bindtap="go">不给点</button>
+</view>
